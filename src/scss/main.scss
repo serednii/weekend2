@@ -2,8 +2,10 @@
 @import "./mixins/functions";
 @import "core/helpers/variables";
 @import "./mixins";
-
-
+@import "./settings";
+@import "../../node_modules/slick-slider/slick/slick.scss";
+@import "../../node_modules/slick-slider/slick/slick-theme.scss";
+// @import "../../node_modules/swiper/swiper-bundle.min.scss";
 @import "core/base/fonts";
 
 @import "../../src/pug/components/**/*";
@@ -33,6 +35,10 @@ body {
 
 h1 {
     line-height: 3rem;
+}
+
+section {
+    margin-bottom: $spaceSectionBottom;
 }
 
 // .burger {

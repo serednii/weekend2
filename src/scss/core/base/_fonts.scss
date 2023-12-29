@@ -11,3 +11,8 @@
 
 @include font-face("Roboto", "../fonts/roboto/roboto-regular");
 @include font-face("Roboto", "../fonts/roboto/roboto-medium", 500);
+@include font-face("interLight", "../fonts/inter/inter-light", 300, normal);
+@include font-face("interRegular", "../fonts/inter/inter-Regular", 400, normal);
+@include font-face("interMedium", "../fonts/inter/inter-Medium", 500, normal);
+@include font-face("interSemiBold", "../fonts/inter/inter-SemiBold", 600, normal);
+@include font-face("interBold", "../fonts/inter/inter-Bold", 700, normal);

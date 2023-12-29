@@ -1,20 +1,41 @@
-@use "sass:map";
+// @use "sass:map";
 
-.container {
-  width: 100%;
-  max-width: map.get($container-sizes, lg);
-  margin: 0 auto;
-  padding: 0 $container-grid;
-}
+// .container {
+//   width: 100%;
+//   max-width: map.get($container-sizes, lg);
+//   margin: 0 auto;
+//   padding: 0 $container-grid;
+// }
 
-@include from(sm) {
-  .container {
-    padding: 0 $container-grid * 2;
-  }
-}
+// @include from(sm) {
+//   .container {
+//     padding: 0 $container-grid * 2;
+//   }
+// }
 
-@include from(md) {
-  .container {
-    padding: 0 $container-grid * 3;
-  }
-}
+// @include from(md) {
+//   .container {
+//     padding: 0 $container-grid * 3;
+//   }
+// }
+
+// body {
+//   // min-height: 100vh;
+//   // overflow: hidden;
+//   font-family: "interRegular", sans-serif;
+// }
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// .wrapper {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .main {
+//   margin-bottom: auto;
+// }

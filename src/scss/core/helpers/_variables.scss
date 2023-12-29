@@ -59,7 +59,7 @@ $container-grid: 20px;
 
 $transition: all 0.3s ease;
 
-$transitionTime: 0.3s;
+$transitionTime: 0.3s ease-in-out;
 $container-width: 1230px;
 $container-offset: 15px;
 
@@ -77,11 +77,11 @@ $fonFantastic: #F0FAF7;
 
 
 $titleTextColor: #101828;
-$textColor: #667085;
+$textColor: #646464;
 $selecColor: #667085;
 
-
-$cardHoverCoor: #4AC8AE;
+$cardHoverColor: #4AC8AE;
+$cardLinkColor: #4AC8AE;
 $sliderBtnBackround: #D0D5DD;
 
 //- teg 
@@ -121,3 +121,7 @@ $footerTitleLinksFontsize: 0.875rem;
 
 
 $spaceSectionBottom: 80px;
+
+//slider
+$sliderDots: #D9D9D9;
+$sliderDotsActive: #4AC8AE;
