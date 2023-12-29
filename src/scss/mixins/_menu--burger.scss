@@ -1,0 +1,29 @@
+/* stylelint-disable */
+
+@mixin menu--burger {
+
+
+      position: fixed;
+      top: 100px;
+      z-index: 15;
+      background-color: aliceblue;
+      width: 100%;
+      
+      .menu-header{
+        width: 100%;
+      }
+      
+      .menu-header__list{
+        width: 100%;
+        flex-direction: column;
+        column-gap: 15px;
+        overflow: auto;
+        padding-top: 10px;
+        max-height: calc(100vh - 110px);
+  }
+
+  .menu-header__item{
+    text-align: center;
+
+  }
+}

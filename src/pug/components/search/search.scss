@@ -1,0 +1,45 @@
+@import "../../../scss/core/helpers/variables";
+
+.search {
+
+    position: relative;
+
+    &__input {
+        display: flex;
+        padding: 10px 125px 10px 42px;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid $sliderBtnBackround;
+        background: #FFF;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        height: 44px;
+        width: 100%;
+    }
+
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        left: 6px;
+    }
+
+    &__select {
+        position: absolute;
+        text-transform: capitalize;
+        font-size: 14px;
+        color: $hoverBackgroundBtn;
+        font-family: "interSemiBold", sans-serif;
+        border-radius: 8px;
+        background-color: #F2FFFB;
+        height: 36px;
+        min-width: 111px;
+        border: none;
+        padding: 8px 16px;
+        top: 4px;
+        right: 6px;
+    }
+}

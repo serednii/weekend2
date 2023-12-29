@@ -1,0 +1,8 @@
+mixin search()
+    form.search(action="#")
+        input.search__input(type="text" value="" placeholder="Want to learn?")
+        button.search__btn(type="submit" )
+            +icon("search")(width="20", height="20")
+        select.search__select(name="search")
+            each item in jsonData.select.items
+                option(value= item)= item

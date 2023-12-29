@@ -1,0 +1,69 @@
+@import "../../../core/helpers/variables";
+@import "../../../mixins";
+
+.top-main {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 575px auto;
+
+    }
+
+    &__content {
+        padding-top: 100px;
+    }
+
+    &__title {
+        font-family: "interBold", sans-serif;
+        color: $colorBtnAccount;
+        font-size: 4rem;
+        line-height: 5.125rem;
+        text-transform: capitalize;
+        letter-spacing: -0.03125rem;
+        margin-bottom: 20px;
+
+        span {
+            color: $hoverBackgroundBtn;
+        }
+    }
+
+    &__text {
+        margin-bottom: 36px;
+        max-width: 487px;
+        color: #646464;
+        font-family: 'interRegular', sans-serif;
+        line-height: 1.8;
+    }
+
+    &__partner {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    &__partner-number {
+        max-width: 178px;
+        width: 100%;
+        margin-right: 55px;
+    }
+
+    &__partner-text {
+        color: $colorBtnAccount;
+        font-size: 1.5625rem;
+        font-family: "interLight", sans-serif;
+
+        span {
+            display: block;
+            font-size: 1.875rem;
+            color: $hoverBackgroundBtn;
+            font-family: "interBold", sans-serif;
+        }
+    }
+
+    &__partner-socials {
+        display: flex;
+        gap: 60px;
+    }
+}

@@ -1,0 +1,26 @@
+// @import "../../../scss/vars";
+
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.social {
+    outline: initial;
+
+    .icon {
+        transition: scale $transitionTime;
+    }
+}
+
+.social:hover {
+    .icon {
+        scale: 1.2;
+    }
+}
+
+.social:focus {
+    .icon {
+        border: 1px solid red;
+    }
+}

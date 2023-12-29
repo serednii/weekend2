@@ -1,0 +1,22 @@
+header.header
+    .container
+        .header__wrapper 
+            .header__top 
+                img.header__logo.logo(src="./img/logo.png", alt="logo")
+                .header__search
+                    +search()
+                .header__menu(data-menu)
+                    +menu-header()
+                .header__account
+                    button.header__account-btn Sign in 
+                    button.header__account-btn Create free account
+                    button.header__account-icon 
+                         +icon("sign_in")(width="24", height="24")
+                    button.header__account-icon 
+                         +icon("create_account")(width="24", height="24")
+                    .header__account-burger.burger(data-burger)
+                        span.burger__line 
+           
+
+
+

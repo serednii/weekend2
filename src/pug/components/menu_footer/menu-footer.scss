@@ -1,0 +1,43 @@
+// @import "../../../scss/vars";
+
+
+.menu-footer {
+
+    &__title {
+        font-size: 0.875rem;
+        color: $footerTitleColor;
+        font-family: "interSemiBold", sans-serif;
+        margin-bottom: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    &__list {
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        font-family: "interMedium", sans-serif;
+        color: $footerTextColor;
+        transition: color $transitionTime;
+        overflow-wrap: anywhere;
+        outline: transparent;
+    }
+
+    &__ellipse {
+        background-color: #f2f4f7;
+        color: #101828;
+        padding: 2px 5px 4px;
+        border-radius: 16px;
+        margin-left: 10px;
+        line-height: 1.3;
+    }
+
+    &__link:hover {
+        color: $footerTitleColor;
+    }
+
+    &__link:focus {
+        color: #8485db;
+    }
+
+}

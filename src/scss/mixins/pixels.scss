@@ -1,0 +1,41 @@
+@mixin pixel($d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10 ) {
+    .display0_5 {
+        display: $d1;
+    }
+
+    .display0_8 {
+        display: $d2;
+    }
+
+    .display1 {
+        display: $d3;
+    }
+
+    .display1_5 {
+        display: $d4;
+    }
+
+    .display2 {
+        display: $d5;
+    }
+
+    .display2_5 {
+        display: $d6;
+    }
+
+    .display3 {
+        display: $d7;
+    }
+
+    .display3_5 {
+        display: $d8;
+    }
+
+    .display4 {
+        display: $d9;
+    }
+
+    .display4_5 {
+        display: $d10;
+    }
+}

@@ -1,0 +1,19 @@
+footer.footer
+    .container 
+        .footer__wrapper 
+            .footer__top
+                .footer__content 
+                    img.footer__logo.logo(src="./img/logo.png", alt="logo")
+                    p Top learning experiences that create more talent in the world.
+                ul.footer__lists 
+                    each item in jsonData.menufooter.items
+                        li.footer__list
+                            +menu-footer(item.title, item.links)
+            .footer__bottom
+                .footer__bottom-left
+                    h2.footer__bottom-copyright  © 2022 Ed-Circle. All rights reserved.
+                .footer__bottom-right
+                    +socials()
+
+
+

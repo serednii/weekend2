@@ -1,0 +1,49 @@
+@import "core/helpers/reset";
+@import "./mixins/functions";
+@import "core/helpers/variables";
+@import "./mixins";
+
+
+@import "core/base/fonts";
+
+@import "../../src/pug/components/**/*";
+@import "scaffolds/components/**/*";
+@import "scaffolds/sections/**/*";
+
+body {
+    // min-height: 100vh;
+    // overflow: hidden;
+    font-family: "interRegular", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-bottom: auto;
+}
+
+h1 {
+    line-height: 3rem;
+}
+
+// .burger {
+//   @include burger;
+// }
+
+// .menu--active {
+//   translate: -10%;
+// }
+
+
+.title {
+    font-family: "interBold", sans-serif;
+}

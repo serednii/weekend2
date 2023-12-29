@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "title": "Product",
+      "links": [
+        {
+          "nameLink": "Overview",
+          "link": "#"
+        },
+        {
+          "nameLink": "Features",
+          "link": "#"
+        },
+        {
+          "nameLink": "Solutions",
+          "link": "#"
+        },
+        {
+          "nameLink": "Tutorials",
+          "link": "#"
+        },
+        {
+          "nameLink": "Pricing",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "nameLink": "About us",
+          "link": "#"
+        },
+        {
+          "nameLink": "Careers",
+          "link": "#"
+        },
+        {
+          "nameLink": "Press",
+          "link": "#",
+          "ellipse": "new"
+        },
+        {
+          "nameLink": "News",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Social",
+      "links": [
+        {
+          "nameLink": "Twitter",
+          "link": "https://twitter.com/?lang=en",
+          "target": "blank"
+        },
+        {
+          "nameLink": "LinkedIn",
+          "link": "https://ru.linkedin.com/",
+          "target": "blank"
+        },
+        {
+          "nameLink": "Facebook",
+          "link": "https://ru-ru.facebook.com/",
+          "target": "blank"
+        },
+        {
+          "nameLink": "GitHub",
+          "link": "https://github.com/",
+          "target": "blank"
+        },
+        {
+          "nameLink": "Dribbble",
+          "link": "https://dribbble.com/",
+          "target": "blank"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "nameLink": "Terms",
+          "link": "#"
+        },
+        {
+          "nameLink": "Privacy",
+          "link": "#"
+        },
+        {
+          "nameLink": "Cookies",
+          "link": "#"
+        },
+        {
+          "nameLink": "Contact",
+          "link": "#"
+        }
+      ]
+    }
+
+  ]
+}

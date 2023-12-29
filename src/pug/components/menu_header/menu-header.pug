@@ -1,0 +1,9 @@
+mixin menu-header()
+  nav.menu-header
+    ul.menu-header__list 
+        each item in jsonData.header.items
+          li.menu-header__item
+            a.menu-header__link(href= item.link, data-menu-item)= item.nameLink
+
+
+

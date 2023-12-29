@@ -1,0 +1,22 @@
+@import "../../../scss/core/helpers/variables";
+
+
+.menu-header {
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        font-family: "interMedium", sans-serif;
+        color: $colorMenu;
+        transition: color $transitionTime, font-family $transitionTime;
+
+        &:hover {
+            font-family: "interSemiBold", sans-serif;
+            color: $hoverColorMenu;
+        }
+    }
+
+}

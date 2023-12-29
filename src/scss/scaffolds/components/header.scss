@@ -1,0 +1,156 @@
+@import "../../core/helpers/variables";
+@import "../../mixins/burger";
+@import "../../mixins/menu-burger";
+
+
+
+.header {
+    padding-top: 28px;
+
+    &__logo {
+        margin-right: 55px;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: minmax(80px, 120px) minmax(300px, 400px) auto 275px;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__account {
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        font-family: "interMedium", sans-serif;
+    }
+
+    &__account-btn {
+        cursor: pointer;
+        border: none;
+        padding: 10px 16px;
+        color: $colorBtnAccount;
+        background-color: transparent;
+        height: 40px;
+        border: 1px solid transparent;
+        min-width: 86px;
+        transition: all 0.5s;
+
+        // transition: color $transitionTime background-color $transitionTime font-size $transitionTime;
+        // 
+        &:hover {
+            font-size: $hoverfontSizeBtnAccount;
+            border-radius: 8px;
+            color: #fff;
+            border-color: $hoverBackgroundBtn;
+            background-color: $hoverBackgroundBtn;
+        }
+
+    }
+
+    &__account-icon {
+        display: none;
+    }
+
+    &__account-btn:last-child {
+        min-width: 186px;
+    }
+
+    &__account-burger {
+        display: none;
+    }
+
+
+}
+
+.burger {
+    @include burger(20px, 19px);
+}
+
+
+// Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { ... }
+// X-Large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .header {
+        &__top {
+            grid-template-columns: minmax(80px, 120px) minmax(300px, 400px) auto;
+        }
+
+        &__menu {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+            padding: 0 0 10px 0;
+        }
+
+        &__account {
+            justify-self: end;
+        }
+    }
+
+}
+
+
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .header {
+        &__account-burger {
+            display: block;
+        }
+
+        &__account-btn {
+            display: none;
+        }
+
+        &__account-icon {
+            display: block;
+            border: none;
+            background-color: transparent;
+            margin-right: 10px;
+        }
+
+        &__menu {
+            translate: 0 -200%;
+            transition: translate $transitionTime;
+            @include menu-burger;
+        }
+
+        &__menu.menu--active {
+            translate: 0;
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .header {
+        &__top {
+            grid-template-columns: minmax(80px, 80px) auto;
+        }
+
+        &__search {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+        }
+
+    }
+}

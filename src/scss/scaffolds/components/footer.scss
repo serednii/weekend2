@@ -1,0 +1,86 @@
+// $footerBackground: #101828;
+
+@import "../../core/helpers/variables";
+
+.footer {
+    background-color: #101828;
+
+    &__wrapper {
+        padding-top: 60px;
+        color: $footerTextColor;
+    }
+
+    &__top {
+        min-height: 210px;
+        margin-bottom: 64px;
+        display: flex;
+    }
+
+
+    &__lists {
+        // background-color: rgb(37, 41, 40);
+        flex: 1 1 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    &__content {
+        font-size: 1rem;
+        flex: 0 1 320px;
+        margin-right: 32px;
+        min-height: 210px;
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+
+    &__list {}
+
+    &__list {
+        flex: 0 1 180px
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    &__bottom-copyright {
+        color: $footerTitleColor;
+        font-size: 1rem;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+//     ...
+// }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+//     ...
+// }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 780px) {
+    .footer__top {
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+//     ...
+// }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//     ...
+// }
