@@ -1,4 +1,4 @@
-@import '../../../core/helpers/variables';
+@import "../../../core/helpers/variables";
 
 .services {
 
@@ -8,13 +8,12 @@
 
 
         &__title {
-            text-align: center;
-            max-width: 768px;
             width: 100%;
-            font-size: 2.25rem;
+            max-width: 768px;
             margin: 0 auto;
             margin-bottom: 40px;
-            font-family: "interSemiBold", sans-serif;
+
+            text-align: center;
         }
 
         &__slider-cards {
@@ -26,14 +25,16 @@
 
         &__slider-card {
             display: inline-block;
-            background-color: white;
-            box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);
-            border-radius: 12px;
-            max-width: 373px;
-            margin-right: 40px;
             width: 100%;
+            max-width: 373px;
             min-height: 243px;
+            margin-right: 40px;
             padding: 30px 40px;
+
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);
+
             transition: color $transitionTime, background-color $transitionTime;
 
             &:hover {
@@ -55,40 +56,45 @@
 
         &__slider-card-title {
             min-height: 50px;
-            padding-left: 65px;
-            font-size: 1.5rem;
-            font-family: "interSemiBold", sans-serif;
-            color: $titleTextColor;
             margin-bottom: 30px;
+            padding-left: 90px;
+
+            color: $titleTextColor;
+            font-size: $fs-30;
+            font-family: "interSemiBold", sans-serif;
             text-transform: capitalize;
-            background-size: contain;
+
             background-repeat: no-repeat;
+            background-size: contain;
         }
 
         &__slider-card-title.title-icon-1 {
-            background-image: url('../img/ourServis-icon1.svg');
+            background-image: url("../img/ourServices/ourServis-icon1.svg");
         }
 
         &__slider-card-title.title-icon-2 {
-            background-image: url('../img/ourServis-icon2.svg');
+            background-image: url("../img/ourServices/ourServis-icon2.svg");
         }
 
         &__slider-card-title.title-icon-3 {
-            background-image: url('../img/ourServis-icon3.svg');
+            background-image: url("../img/ourServices/ourServis-icon3.svg");
         }
 
         &__slider-card-content {
-            color: $textColor;
             margin-bottom: 22px;
+
+            color: $textColor;
             line-height: 1.8;
         }
 
         &__slider-card-link {
-            font-family: "interMedium", sans-serif;
-            font-size: 1.125rem;
-            color: $cardLinkColor;
-            text-transform: capitalize;
             position: relative;
+
+            color: $cardLinkColor;
+            font-size: $fs-22;
+            font-family: "interMedium", sans-serif;
+            text-transform: capitalize;
+
             transition: color $transitionTime;
 
             &:hover {
@@ -100,9 +106,10 @@
             }
 
             &:before {
-                content: ">";
                 position: absolute;
                 right: -25px;
+
+                content: ">";
             }
         }
 
@@ -111,19 +118,24 @@
     .slick-dots li button:before {
         position: absolute;
         top: 0px;
-        content: "";
-        border-radius: 6px;
+
         width: 12px;
         height: 12px;
+
         color: transparent;
+
         background-color: $sliderDots;
+        border-radius: 6px;
         opacity: 1;
+
+        content: "";
 
     }
 
     .slick-dots li.slick-active button:before {
-        background-color: $sliderDotsActive;
         width: 48px;
+
+        background-color: $sliderDotsActive;
     }
 
     .slick-dots li.slick-active:not(:last-child) {

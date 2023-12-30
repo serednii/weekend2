@@ -1,1 +1,70 @@
-p programs
+section.programs 
+    .container 
+        .programs__wrapper 
+            p.programs__first-text Explore Programs
+            h2.programs__title.title Our Most Popular Class
+            p.programs__subtitle Let's join our famous class, the knowledge provided will definitely be useful for you.
+            .swiper    
+                ul.programs__slider-cards.swiper-wrapper
+
+                    li.programs__slider-card(tabindex="0")
+                        .programs__slider-card-img-box(data-time="08 hr 12 mins")  
+                            +picture("./img/programs/card/image1.jpg", "./img/programs/card/image1@2x.jpg") 
+                        p.programs__slider-card-subtitle Desing
+                        h3.programs__slider-card-title Figma UI UX Design
+                        p.programs__slider-card-content Use Figma to get a job in UI Design, User Interface, User Experience design.
+                        .programs__slider-card-rating
+                            .programs__slider-card-rating-number(data-rating="1") 1
+                            .programs__slider-card-rating-star.rater 
+                                //- +cssRating()
+                            .programs__slider-card-rating-number-user (16,325)
+                        .programs__slider-card-bottom 
+                            .programs__slider-card-bottom-user 
+                                +picture("./img/programs/avatar/Avatar1.png", "./img/programs/avatar/Avatar1@2x.png") 
+                                p Jane Cooper
+                                    span 2001 Enrolled
+                            .programs__slider-card-bottom-price $17.84
+                    
+                    li.programs__slider-card(tabindex="0") 
+                        .programs__slider-card-img-box(data-time="06 hr 3 mins")
+                            +picture("./img/programs/card/image1.jpg", "./img/programs/card/image1@2x.jpg") 
+                        p.programs__slider-card-subtitle Desing
+                        h3.programs__slider-card-title Learn With Shoaib
+                        p.programs__slider-card-content Use Figma to get a job in UI Design, User Interface, User Experience design.
+                        .programs__slider-card-rating
+                            .programs__slider-card-rating-number(data-rating="3.3") 3.3
+                            .programs__slider-card-rating-star.rater
+                                //- +cssRating()  
+                            .programs__slider-card-rating-number-user (16,325)
+                        .programs__slider-card-bottom 
+                            .programs__slider-card-bottom-user
+                                +picture("./img/programs/avatar/Avatar2.png", "./img/programs/avatar/Avatar2@2x.png") 
+                                p Jenny Wilson
+                                    span 2001 Enrolled
+                            .programs__slider-card-bottom-price $8.99
+                    
+                    li.programs__slider-card(tabindex="0") 
+                        .programs__slider-card-img-box(data-time="01 hr 2 mins") 
+                            +picture("./img/programs/card/image1.jpg", "./img/programs/card/image1@2x.jpg") 
+                        p.programs__slider-card-subtitle Desing
+                        h3.programs__slider-card-title Building User Interface
+                        p.programs__slider-card-content Use Figma to get a job in UI Design, User Interface, User Experience design.
+                        .programs__slider-card-rating
+                            .programs__slider-card-rating-number(data-rating="2") 2
+                            .programs__slider-card-rating-star.rater
+                                //- +cssRating() 
+                            .programs__slider-card-rating-number-user (16,325)
+                        .programs__slider-card-bottom
+                            .programs__slider-card-bottom-user
+                                +picture("./img/programs/avatar/Avatar3.png", "./img/programs/avatar/Avatar3@2x.png") 
+                                p Esther Howard
+                                    span 2001 Enrolled
+                            .programs__slider-card-bottom-price $11,70
+
+            button.programs__button Explore All Programs
+
+
+
+
+
+

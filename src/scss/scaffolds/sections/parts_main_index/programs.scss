@@ -1,0 +1,202 @@
+@import "../../../core/helpers/variables";
+@import "../../../mixins/truncute";
+@import "../../../mixins/font-face";
+
+
+$pr-green-dark: #1A906B;
+$pr-green-light: #3FC89E;
+$pr-black: #101828;
+$pr-grey: #667085;
+$pr-grey-light: #969696;
+
+.programs {
+
+    &__first-text {
+        margin-bottom: 12px;
+
+        color: $pr-green-dark;
+        text-transform: capitalize;
+        @include interSemiBold;
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        text-transform: capitalize;
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+
+        color: $pr-grey;
+        font-size: $fs-20;
+
+    }
+
+    &__slider-card {
+        width: 100%;
+        max-width: 385px;
+        min-height: 555px;
+        padding: 24px;
+
+        color: $textColor;
+        font-size: $fs-14;
+
+        background-color: rgb(214, 205, 205);
+        box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+    }
+
+    &__slider-card-img-box {
+        position: relative;
+
+        width: 100%;
+        margin-bottom: 32px;
+
+        border-radius: 4px;
+
+        &img {
+            width: 100%;
+            max-width: 336px;
+            object-fit: contain;
+
+            border-radius: 4px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 11px;
+            right: 11px;
+
+            width: 132px;
+            height: 30px;
+            padding-right: 10px;
+
+            color: $pr-grey;
+            line-height: 30px;
+            text-align: right;
+
+            background-color: white;
+            background-image: url("../img/programs/time.svg");
+            background-repeat: no-repeat;
+            background-position: 8px 6px;
+            border-radius: 4px;
+
+            content: attr(data-time);
+        }
+    }
+
+    &__slider-card-subtitle {
+
+        position: relative;
+
+        margin-bottom: 12px;
+
+        color: $pr-green-dark;
+        font-size: $fs-14;
+        text-transform: capitalize;
+
+        &::after {
+            position: absolute;
+            top: 35px;
+            right: 0px;
+            z-index: 5;
+
+            width: 16px;
+            height: 16px;
+
+            background-image: url("../img/programs/arrow.svg");
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+
+            content: "";
+        }
+    }
+
+    &__slider-card-title {
+        max-width: 250px;
+        margin-bottom: 12px;
+
+        color: $pr-black;
+        font-size: $fs-24;
+        text-transform: capitalize;
+        @include truncate();
+
+
+
+    }
+
+    &__slider-card-content {
+        margin-bottom: 12px;
+
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    // RATING
+    &__slider-card-rating {
+        display: flex;
+        margin-bottom: 32px;
+    }
+
+    &__slider-card-rating-number {
+        margin-right: 5px;
+
+        color: $pr-green-light;
+        font-size: $fs-14;
+        // font-family: "interMedium", sans-serif;
+        @include interMedium;
+    }
+
+    &__slider-card-rating-star {
+        margin-right: 10px;
+    }
+
+
+    &__slider-card-rating-number-user {
+        color: $pr-grey-light;
+        font-size: $fs-14;
+    }
+
+    //USER 
+    &__slider-card-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider-card-bottom-user {
+        display: flex;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+
+        p {
+            width: 100px;
+
+            color: $pr-black;
+            font-size: $fs-14 ;
+            line-height: 1.43;
+            @include interMedium;
+
+
+            span {
+                display: block;
+
+                color: $pr-grey;
+                @include interRegular;
+
+            }
+        }
+    }
+
+    &__slider-card-bottom-price {
+        color: $pr-green-light;
+        font-size: $fs-26;
+        @include interBold;
+
+    }
+
+}

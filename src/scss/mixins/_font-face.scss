@@ -8,3 +8,24 @@
     font-style: $style;
   }
 }
+
+
+@mixin interLight {
+  font-family: "interLight", sans-serif;
+}
+
+@mixin interRegular {
+  font-family: "interRegular", sans-serif;
+}
+
+@mixin interMedium {
+  font-family: "interMedium", sans-serif;
+}
+
+@mixin interSemiBold {
+  font-family: "interSemiBold", sans-serif;
+}
+
+@mixin interBold {
+  font-family: "interBold", sans-serif;
+}
