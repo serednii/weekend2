@@ -1,0 +1,102 @@
+@import "../../../mixins/font-face";
+@import "../../../core/helpers/variables";
+
+
+.tutors {
+
+    $green-dark: #1A906B;
+    $green-light: #3FC89E;
+    $black: #101828;
+    $grey: #667085;
+    $grey-light: #969696;
+    $grey-btn: #D0D5DD;
+
+    &__top-subtitle {
+        @include interSemiBold;
+        margin-bottom: 12px;
+
+        color: #22B286;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+
+    &__bottom-subtitle {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        color: $grey;
+        font-size: $fs-20;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    &__card {
+        position: relative;
+
+        width: 100%;
+        max-width: 276px;
+        min-height: 340px;
+        padding: 24px;
+
+        line-height: 1.5;
+        text-align: center;
+
+        background-color: #f9fafb;
+    }
+
+    &__card-container-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__card-name {
+        color: $black;
+        font-size: $fs-18;
+        @include interMedium;
+    }
+
+    &__card-position {
+        margin-bottom: 8px;
+
+        color: #22b286;
+
+    }
+
+    &__card-descriptions {
+        color: $grey;
+    }
+
+    &__card-socials {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+
+        width: 100%;
+        margin-top: auto;
+
+        .socials {
+            gap: 16px;
+            justify-content: center;
+        }
+    }
+}

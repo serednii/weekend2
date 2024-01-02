@@ -1,20 +1,27 @@
 @import "../../../core/helpers/variables";
 @import "../../../mixins/truncute";
 @import "../../../mixins/font-face";
+@import "../../../mixins/slick-slider-pagination";
 
 
-$pr-green-dark: #1A906B;
-$pr-green-light: #3FC89E;
-$pr-black: #101828;
-$pr-grey: #667085;
-$pr-grey-light: #969696;
+
+$green-dark: #1A906B;
+$green-light: #3FC89E;
+$black: #101828;
+$grey: #667085;
+$grey-light: #969696;
+$grey-btn: #D0D5DD;
 
 .programs {
+
+    &__wrapper {
+        position: relative
+    }
 
     &__first-text {
         margin-bottom: 12px;
 
-        color: $pr-green-dark;
+        color: $green-dark;
         text-transform: capitalize;
         @include interSemiBold;
 
@@ -29,9 +36,13 @@ $pr-grey-light: #969696;
     &__subtitle {
         margin-bottom: 40px;
 
-        color: $pr-grey;
+        color: $grey;
         font-size: $fs-20;
 
+    }
+
+    &__slider-cards {
+        margin-bottom: 92px !important;
     }
 
     &__slider-card {
@@ -72,7 +83,7 @@ $pr-grey-light: #969696;
             height: 30px;
             padding-right: 10px;
 
-            color: $pr-grey;
+            color: $grey;
             line-height: 30px;
             text-align: right;
 
@@ -92,7 +103,7 @@ $pr-grey-light: #969696;
 
         margin-bottom: 12px;
 
-        color: $pr-green-dark;
+        color: $green-dark;
         font-size: $fs-14;
         text-transform: capitalize;
 
@@ -117,7 +128,7 @@ $pr-grey-light: #969696;
         max-width: 250px;
         margin-bottom: 12px;
 
-        color: $pr-black;
+        color: $black;
         font-size: $fs-24;
         text-transform: capitalize;
         @include truncate();
@@ -142,7 +153,7 @@ $pr-grey-light: #969696;
     &__slider-card-rating-number {
         margin-right: 5px;
 
-        color: $pr-green-light;
+        color: $green-light;
         font-size: $fs-14;
         // font-family: "interMedium", sans-serif;
         @include interMedium;
@@ -154,7 +165,7 @@ $pr-grey-light: #969696;
 
 
     &__slider-card-rating-number-user {
-        color: $pr-grey-light;
+        color: $grey-light;
         font-size: $fs-14;
     }
 
@@ -176,27 +187,49 @@ $pr-grey-light: #969696;
         p {
             width: 100px;
 
-            color: $pr-black;
+            color: $black;
             font-size: $fs-14 ;
             line-height: 1.43;
             @include interMedium;
 
-
             span {
                 display: block;
 
-                color: $pr-grey;
+                color: $grey;
                 @include interRegular;
-
             }
         }
     }
 
     &__slider-card-bottom-price {
-        color: $pr-green-light;
+        color: $green-light;
         font-size: $fs-26;
         @include interBold;
 
+    }
+
+    @include slick-slider-pagination(30px);
+
+    &__bottom-button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 16px;
+
+        color: $black;
+        font-size: $fs-14;
+
+        background-color: $grey-btn;
+        border-color: transparent;
+        border-radius: 8px;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        cursor: pointer;
+
+        transition: background-color $transitionTime;
+        @include interSemiBold;
+
+        &:hover {
+            background-color: $grey-light;
+        }
     }
 
 }

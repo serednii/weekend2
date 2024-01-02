@@ -1,1 +1,38 @@
-p tutors
+section.tutors 
+    .container 
+        p.tutors__top-subtitle Tutors
+        h2.tutors__title.title Meet the Heroes
+        p.tutors__bottom-subtitle On Weekend UX, instructors from all over the world instruct millions of students. We offer the knowledge and abilities.
+        ul.tutors__cards 
+            li.tutors__card 
+                .tutors__card-container-img 
+                    +picture("./img/tutors/TheresaWebb@1x.png", "./img/tutors/TheresaWebb@2x.png") 
+                .tutors__card-name Theresa Webb
+                .tutors__card-position Application Support Analyst Lead
+                .tutors__card-descriptions Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+                .tutors__card-socials
+                    +socials(jsonData.socials.tutorsCard, 20, 20)
+            li.tutors__card 
+                .tutors__card-container-img 
+                    +picture("./img/tutors/CourtneyHenry@1x.png", "./img/tutors/CourtneyHenry@2x.png") 
+                .tutors__card-name Courtney Henry
+                .tutors__card-position Director, Undergraduate Analytics and Planning  
+                .tutors__card-descriptions Lead engineering teams at Figma, Pitch, and Protocol Labs.
+                .tutors__card-socials
+                    +socials(jsonData.socials.tutorsCard, 20, 20)
+            li.tutors__card 
+                .tutors__card-container-img 
+                    +picture("./img/tutors/AlbertFlores@1x.png", "./img/tutors/AlbertFlores@2x.png") 
+                .tutors__card-name Albert Flores
+                .tutors__card-position Career Educator
+                .tutors__card-descriptions Former PM for Linear, Lambda School, and On Deck.
+                .tutors__card-socials
+                    +socials(jsonData.socials.tutorsCard, 20, 20)
+            li.tutors__card 
+                .tutors__card-container-img 
+                    +picture("./img/tutors/MarvinMcKinney@1x.png", "./img/tutors/MarvinMcKinney@2x.png") 
+                .tutors__card-name Marvin McKinney
+                .tutors__card-position Co-op & Internships Program & Operations Manager
+                .tutors__card-descriptions Former frontend dev for Linear, Coinbase, and Postscript.
+                .tutors__card-socials
+                    +socials(jsonData.socials.tutorsCard, 20, 20)

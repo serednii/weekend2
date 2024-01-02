@@ -1,0 +1,14 @@
+{
+  "footer": 
+  [
+    {"link":"https://twitter.com/?lang=en", "nameLink": "social-twitter"},
+    {"link":"https://ru.linkedin.com/", "nameLink": "social-linkedIn"}, 
+    {"link":"https://ru-ru.facebook.com/", "nameLink": "social-facebook"},
+    {"link":"https://github.com/", "nameLink": "social-github"}, 
+    {"link":"https://dribbble.com/", "nameLink": "social-dribbble"}
+  ],
+  "tutorsCard":[
+    {"link":"https://twitter.com/?lang=en", "nameLink": "tutors-twitter"},
+    {"link":"https://ru.linkedin.com/", "nameLink": "tutors-linkedin"}
+  ]  
+}

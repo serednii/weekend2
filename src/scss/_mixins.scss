@@ -28,7 +28,9 @@
 }
 
 @mixin retina($dpi: 144, $dppx: 1.5) {
-  @media (min-resolution: #{$dpi}dpi), (min-resolution: #{$dppx}dppx) {
+
+  @media (min-resolution: #{$dpi}dpi),
+  (min-resolution: #{$dppx}dppx) {
     @content;
   }
 }
@@ -95,3 +97,8 @@
     content: "";
   }
 }
+
+// @mixin fsPx($px) {
+//   $rem = 1rem;
+//   font-size: #{$px / }px;
+// }

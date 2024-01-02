@@ -1,4 +1,5 @@
 @import "../../../core/helpers/variables";
+@import "../../../mixins/slick-slider-pagination";
 
 .services {
 
@@ -112,34 +113,7 @@
                 content: ">";
             }
         }
-
     }
 
-    .slick-dots li button:before {
-        position: absolute;
-        top: 0px;
-
-        width: 12px;
-        height: 12px;
-
-        color: transparent;
-
-        background-color: $sliderDots;
-        border-radius: 6px;
-        opacity: 1;
-
-        content: "";
-
-    }
-
-    .slick-dots li.slick-active button:before {
-        width: 48px;
-
-        background-color: $sliderDotsActive;
-    }
-
-    .slick-dots li.slick-active:not(:last-child) {
-        padding-left: 60px;
-    }
-
+    @include slick-slider-pagination(0)
 }

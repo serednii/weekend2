@@ -35,6 +35,6 @@ mixin pictureWebp(mobile, tablet="", desktop="")
         if tablet.length
           source(media="(min-width: 768px)", srcset=webpTablet + " 1x, " + webpTablet2x + " 2x")
           source(media="(min-width: 768px)", srcset=tablet + " 1x, " + tablet2x + " 2x")
-      
+          
         source(type="image/webp", srcset=webpMobile + " 1x, " + webpMobile2x + " 2x")
         img(src=mobile, srcset=mobile2x + " 2x", width, height, alt, loading="lazy")&attributes(attributes)

@@ -2,7 +2,7 @@
 import './components/burger'
 
 import $ from 'jquery'
-import Swiper from 'swiper'
+// import Swiper from 'swiper'
 
 import 'slick-slider'
 
@@ -22,16 +22,22 @@ const rater = require('rater-js')
 // var swiperContainer = document.querySelector('.slider');
 
 // swiper має дві обгортки swiper є зовнішньою а swiper - wrapper обгортка з елементами swiper - slide    https://swiperjs.com/get-started
-new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-  },
-})
+// new Swiper('.swiper', {
+//   // slidesPerView: 3,
+//   // slidesPerColumn: 1,
+//   // spaceBetween: 30,
+//   pagination: {
+//     el: 'swiper-pagination',
+//     clickable: true,
+//   },
+// })
 
-$('.slider').slick({
+// slider services
+$('.slider-services').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  // spaceBetween: 15,
   dots: true,
   arrows: false,
   centerPadding: '20px',
@@ -56,6 +62,37 @@ $('.slider').slick({
   ],
 })
 
+// slider programs
+$('.slider-programs').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  // spaceBetween: 15,
+  dots: true,
+  arrows: false,
+  centerPadding: '20px',
+  variableWidth: true,
+  // centerMode: true,
+  // fade: true,
+  responsive: [
+    {
+      breakpoint: 1130,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+})
+
+// rating star
 const ratingElements = document.querySelectorAll('.rater')
 function raterRouter(el, ratingInput) {
   const myRater = rater({
