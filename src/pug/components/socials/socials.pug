@@ -1,17 +1,6 @@
-mixin socials()
+mixin socials(links={}, width = 24, height = 24)
   ul.socials
-    li.social 
-      a.social__link(href="https://twitter.com/?lang=en" target="_blank")
-         +icon("social-twitter")(width="24", height="24")
-    li.social 
-      a.social__link(href="https://ru.linkedin.com/" target="_blank")
-         +icon("social-linkedIn")(width="24", height="24")
-    li.social 
-      a.social__link(href="https://ru-ru.facebook.com/" target="_blank")
-         +icon("social-facebook")(width="24", height="24")
-    li.social 
-      a.social__link(href="https://github.com/" target="_blank")
-         +icon("social-github")(width="24", height="24")
-    li.social 
-      a.social__link(href="https://dribbble.com/" target="_blank")
-         +icon("social-dribbble")(width="24", height="24")
+    each link in links
+      li.social 
+        a.social__link(href=link.link)
+          +icon(link.nameLink)(width=width, height=height)
